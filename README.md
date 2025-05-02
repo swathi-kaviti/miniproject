@@ -29,6 +29,10 @@ your-repo/
 │   └── Hybrid.json
 │   └── pali.json
 |   └── git.json
+|── Robustness.ipynb
+|── performance.txt
+|── Report.pdf
+|── miniproject.pdf
 ```
 
 
@@ -52,6 +56,7 @@ Stores `.json` files that hold the **original and attacked captions**, along wit
 - **BLIP-2**
 - **GIT (Generative Image-to-Text)**
 - **ViT-GPT2**
+- **Pali**
 - **Hybrid (BLIP-2 + GIT)**
 
 ---
