@@ -47,7 +47,19 @@ Contains notebooks that demonstrate how each model performs captioning on a **si
 Includes scripts to generate captions over **entire datasets** using various LLMs and apply adversarial attacks like FGSM, PGD, DeepFool, BIM, and AutoAttack.
 
 ### `output_json/`
-Stores `.json` files that hold the **original and attacked captions**, along with image IDs and evaluation metrics such as BLEU, METEOR, and BERTScore.
+Stores `.json` files that hold the **original and attacked captions**, along with image IDs and ground truth captions.
+
+### `Robustness.ipynb`
+Notebook which contains code to evaluate the performance metrics(BLEU, METEOR, BERTScore) of the models based on the `.json` files.
+
+### `Performance.txt`
+A TXT file contains the performance measures of the models on different strength parameters.
+
+### `Report.pdf`
+Report of the project.
+
+### `miniproject.pdf`
+Presentation of the project.
 
 ---
 
