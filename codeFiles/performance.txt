@@ -1,4 +1,4 @@
-					pali
+						PALI
 
 📊 Original Caption Scores:
   BLEU: 0.1502
@@ -9,6 +9,11 @@ eps=0.03
   BLEU: 0.1372 (drop: 0.013)
   METEOR: 0.1783 (drop: 0.006)
   BERTScore F1 vs Original: 0.9189
+eps=0.05
+📊 Scores under FGSM Attack:
+  BLEU: 0.1300 (drop: 0.0202)
+  METEOR: 0.1710 (drop: 0.0133)
+  BERTScore F1 vs Original: 0.91
 
 eps=0.03
 alpha=0.005
@@ -17,34 +22,6 @@ num_iters=10
   BLEU: 0.1494 (drop: 0.0008)
   METEOR: 0.182 (drop: 0.0023)
   BERTScore F1 vs Original: 0.9302
-
-patch_size=60
-📊 Scores under ADVERSARIAL_PATCH Attack:
-  BLEU: 0.1506 (drop: -0.0004)
-  METEOR: 0.1849 (drop: -0.0006)
-  BERTScore F1 vs Original: 0.997
-
-color=(255,255,0)
-size=40
-📊 Scores under TRIGGER_PATCH Attack:
-  BLEU: 0.1487 (drop: 0.0015)
-  METEOR: 0.184 (drop: 0.0003)
-  BERTScore F1 vs Original: 0.9968
-
-
-📊 Scores under UNIVERSAL_PATCH Attack:
-  BLEU: 0.1538 (drop: -0.0036)
-  METEOR: 0.1856 (drop: -0.0013)
-  BERTScore F1 vs Original: 0.9361
-
-changed strength
-
-eps=0.05
-📊 Scores under FGSM Attack:
-  BLEU: 0.1300 (drop: 0.0202)
-  METEOR: 0.1710 (drop: 0.0133)
-  BERTScore F1 vs Original: 0.91
-
 eps=0.1
 alpha=0.01
 num_iters=20
@@ -53,12 +30,23 @@ num_iters=20
   METEOR: 0.150 (drop: 0.0343)
   BERTScore F1 vs Original: 0.88
 
+patch_size=60
+📊 Scores under ADVERSARIAL_PATCH Attack:
+  BLEU: 0.1506 (drop: -0.0004)
+  METEOR: 0.1849 (drop: -0.0006)
+  BERTScore F1 vs Original: 0.997
 patch_size=100
 📊 Scores under ADVERSARIAL_PATCH Attack:
   BLEU: 0.1250 (drop: 0.0252)
   METEOR: 0.1600 (drop: 0.0243)
   BERTScore F1 vs Original: 0.92
 
+color=(255,255,0)
+size=40
+📊 Scores under TRIGGER_PATCH Attack:
+  BLEU: 0.1487 (drop: 0.0015)
+  METEOR: 0.184 (drop: 0.0003)
+  BERTScore F1 vs Original: 0.9968
 color=(255,0,0)
 size=80
 📊 Scores under TRIGGER_PATCH Attack:
@@ -66,14 +54,18 @@ size=80
   METEOR: 0.1550 (drop: 0.0293)
   BERTScore F1 vs Original: 0.92
 
+📊 Scores under UNIVERSAL_PATCH Attack:
+  BLEU: 0.1538 (drop: -0.0036)
+  METEOR: 0.1856 (drop: -0.0013)
+  BERTScore F1 vs Original: 0.9361
 size=100
 📊 Scores under UNIVERSAL_PATCH Attack:
   BLEU: 0.1400 (drop: 0.0102)
   METEOR: 0.1750 (drop: 0.0093)
   BERTScore F1 vs Original: 0.94
 
+						HYBRID
 
-					Hybrid
 📊 Original Caption Scores:
   BLEU: 0.1811
   METEOR: 0.2617
@@ -83,6 +75,11 @@ eps=0.09
   BLEU: 0.1634 (drop: 0.0177)
   METEOR: 0.2321 (drop: 0.0296)
   BERTScore F1 vs Original: 0.9494
+eps=0.05
+📊 Scores under FGSM Attack:
+  BLEU: 0.1700 (drop: 0.0111)
+  METEOR: 0.2450 (drop: 0.0167)
+  BERTScore F1 vs Original: 0.91
 
 eps=0.09
 alpha=0.02
@@ -91,39 +88,6 @@ num_iters=10
   BLEU: 0.164 (drop: 0.0171)
   METEOR: 0.2291 (drop: 0.0326)
   BERTScore F1 vs Original: 0.9489
-
-c=1e^-1
-num_iters=50
-lr=1e^-2
-📊 Scores under CW Attack:
-  BLEU: 0.1833 (drop: -0.0022)
-  METEOR: 0.261 (drop: 0.0007)
-  BERTScore F1 vs Original: 0.9645
-
-num_iters=30
-overshoot=0.5
-📊 Scores under DEEPFOOL Attack:
-  BLEU: 0.18 (drop: 0.0011)
-  METEOR: 0.2586 (drop: 0.0031)
-  BERTScore F1 vs Original: 0.9635
-
-eps=0.09
-alpha=0.02
-num_iters=10
-📊 Scores under BIM Attack:
-  BLEU: 0.164 (drop: 0.0171)
-  METEOR: 0.2291 (drop: 0.0326)
-  BERTScore F1 vs Original: 0.9489
-
-
-changed strength
-
-eps=0.05
-📊 Scores under FGSM Attack:
-  BLEU: 0.1700 (drop: 0.0111)
-  METEOR: 0.2450 (drop: 0.0167)
-  BERTScore F1 vs Original: 0.91
-
 eps=0.08
 alpha=0.01
 num_iters=8
@@ -132,6 +96,13 @@ num_iters=8
   METEOR: 0.2380 (drop: 0.0237)
   BERTScore F1 vs Original: 0.93
 
+c=1e^-1
+num_iters=50
+lr=1e^-2
+📊 Scores under CW Attack:
+  BLEU: 0.1833 (drop: -0.0022)
+  METEOR: 0.261 (drop: 0.0007)
+  BERTScore F1 vs Original: 0.9645
 c=1e^-2
 num_iters=100
 lr=1e^-3
@@ -140,6 +111,12 @@ lr=1e^-3
   METEOR: 0.2615 (drop: 0.0002)
   BERTScore F1 vs Original: 0.965
 
+num_iters=30
+overshoot=0.5
+📊 Scores under DEEPFOOL Attack:
+  BLEU: 0.18 (drop: 0.0011)
+  METEOR: 0.2586 (drop: 0.0031)
+  BERTScore F1 vs Original: 0.9635
 num_iters=50
 overshoot=0.7
 📊 Scores under DEEPFOOL Attack:
@@ -147,6 +124,13 @@ overshoot=0.7
   METEOR: 0.2520 (drop: 0.0097)
   BERTScore F1 vs Original: 0.96
 
+eps=0.09
+alpha=0.02
+num_iters=10
+📊 Scores under BIM Attack:
+  BLEU: 0.164 (drop: 0.0171)
+  METEOR: 0.2291 (drop: 0.0326)
+  BERTScore F1 vs Original: 0.9489
 eps=0.07
 alpha=0.015
 num_iters=8
@@ -155,7 +139,7 @@ num_iters=8
   METEOR: 0.2300 (drop: 0.0317)
   BERTScore F1 vs Original: 0.93
 
-					git
+						GIT
 
 Original:
   BLEU: 0.1528
@@ -166,6 +150,11 @@ eps=0.02
   BLEU: 0.1535 (drop: -0.0007)
   METEOR: 0.1824 (drop: -0.0009)
   BERTScore F1 vs Original: 0.9926
+eps=0.1
+⚠ Under FGSM Attack:
+  BLEU: 0.1200 (drop: 0.0328)
+  METEOR: 0.1500 (drop: 0.0315)
+  BERTScore F1 vs Original: 0.90
 
 eps=0.2
 alpha=0.01
@@ -174,34 +163,6 @@ num_iters=1
   BLEU: 0.1487 (drop: 0.0041)
   METEOR: 0.1795 (drop: 0.002)
   BERTScore F1 vs Original: 0.9749
-
-eps=0.03
-⚠ Under CW Attack:
-  BLEU: 0.1266 (drop: 0.0262)
-  METEOR: 0.1702 (drop: 0.0113)
-  BERTScore F1 vs Original: 0.9184
-
-eps=0.05
-⚠ Under JSMA Attack:
-  BLEU: 0.1529 (drop: -0.0001)
-  METEOR: 0.1819 (drop: -0.0004)
-  BERTScore F1 vs Original: 0.9862
-
-num_pixels=1
-⚠ Under ONE_PIXEL Attack:
-  BLEU: 0.1537 (drop: -0.0009)
-  METEOR: 0.1815 (drop: 0.0)
-  BERTScore F1 vs Original: 0.996
-
-
-changes strength
-
-eps=0.1
-⚠ Under FGSM Attack:
-  BLEU: 0.1200 (drop: 0.0328)
-  METEOR: 0.1500 (drop: 0.0315)
-  BERTScore F1 vs Original: 0.90
-
 eps=0.3
 alpha=0.03
 num_iters=20
@@ -210,27 +171,40 @@ num_iters=20
   METEOR: 0.1420 (drop: 0.0395)
   BERTScore F1 vs Original: 0.88
 
+eps=0.03
+⚠ Under CW Attack:
+  BLEU: 0.1266 (drop: 0.0262)
+  METEOR: 0.1702 (drop: 0.0113)
+  BERTScore F1 vs Original: 0.9184
 eps=0.1
 ⚠ Under CW Attack:
   BLEU: 0.1120 (drop: 0.0408)
   METEOR: 0.1380 (drop: 0.0435)
   BERTScore F1 vs Original: 0.86
 
+eps=0.05
+⚠ Under JSMA Attack:
+  BLEU: 0.1529 (drop: -0.0001)
+  METEOR: 0.1819 (drop: -0.0004)
+  BERTScore F1 vs Original: 0.9862
 eps=0.2
 ⚠ Under JSMA Attack:
   BLEU: 0.1280 (drop: 0.0248)
   METEOR: 0.1650 (drop: 0.0165)
   BERTScore F1 vs Original: 0.91
 
+num_pixels=1
+⚠ Under ONE_PIXEL Attack:
+  BLEU: 0.1537 (drop: -0.0009)
+  METEOR: 0.1815 (drop: 0.0)
+  BERTScore F1 vs Original: 0.996
 num_pixels=5
 ⚠ Under ONE_PIXEL Attack:
   BLEU: 0.1450 (drop: 0.0078)
   METEOR: 0.1780 (drop: 0.0035)
   BERTScore F1 vs Original: 0.94
 
-
-
-        				 VIT-GPT2
+        				 	VIT-GPT2
 
 📊 Original Caption Scores:
   BLEU: 0.1641
@@ -241,6 +215,11 @@ eps=0.05
   BLEU: 0.1226 (drop: 0.0415)
   METEOR: 0.1624 (drop: 0.0445)
   BERTScore F1 vs Original: 0.9314
+eps=0.02
+📊 Scores under FGSM Attack:
+  BLEU: 0.1500 (drop: 0.0141)
+  METEOR: 0.1925 (drop: 0.0144)
+  BERTScore F1 vs Original: 0.9750
 
 eps=0.03
 alpha=0.005
@@ -249,34 +228,6 @@ iters=10
   BLEU: 0.1055 (drop: 0.0586)
   METEOR: 0.146 (drop: 0.0609)
   BERTScore F1 vs Original: 0.9236
-
-eps=0.03
-iters=10
-📊 Scores under BIM Attack:
-  BLEU: 0.1113 (drop: 0.0528)
-  METEOR: 0.1509 (drop: 0.056)
-  BERTScore F1 vs Original: 0.926
-
-auto
-📊 Scores under DEEPFOOL Attack:
-  BLEU: 0.1306 (drop: 0.0335)
-  METEOR: 0.1695 (drop: 0.0374)
-  BERTScore F1 vs Original: 0.9358
-
-eps=0.1
-📊 Scores under AUTOATTACK Attack:
-  BLEU: 0.1514 (drop: 0.0127)
-  METEOR: 0.191 (drop: 0.0159)
-  BERTScore F1 vs Original: 0.9863
-
-changed strength
-
-eps=0.02
-📊 Scores under FGSM Attack:
-  BLEU: 0.1500 (drop: 0.0141)
-  METEOR: 0.1925 (drop: 0.0144)
-  BERTScore F1 vs Original: 0.9750
-
 eps=0.1
 alpha=0.01
 iters=20
@@ -285,6 +236,12 @@ iters=20
   METEOR: 0.1320 (drop: 0.0749)
   BERTScore F1 vs Original: 0.8900
 
+eps=0.03
+iters=10
+📊 Scores under BIM Attack:
+  BLEU: 0.1113 (drop: 0.0528)
+  METEOR: 0.1509 (drop: 0.056)
+  BERTScore F1 vs Original: 0.926
 eps=0.1
 iters=20
 📊 Scores under BIM Attack:
@@ -297,15 +254,24 @@ auto
   BLEU: 0.1306 (drop: 0.0335)
   METEOR: 0.1695 (drop: 0.0374)
   BERTScore F1 vs Original: 0.9358
+auto
+📊 Scores under DEEPFOOL Attack:
+  BLEU: 0.1306 (drop: 0.0335)
+  METEOR: 0.1695 (drop: 0.0374)
+  BERTScore F1 vs Original: 0.9358
 
+eps=0.1
+📊 Scores under AUTOATTACK Attack:
+  BLEU: 0.1514 (drop: 0.0127)
+  METEOR: 0.191 (drop: 0.0159)
+  BERTScore F1 vs Original: 0.9863
 eps=0.05
 📊 Scores under AUTOATTACK Attack:
   BLEU: 0.1570 (drop: 0.0071)
   METEOR: 0.1995 (drop: 0.0074)
   BERTScore F1 vs Original: 0.9900
 
-
-					BLIP-2
+						BLIP-2
 
 📊 Original Caption Scores:
   BLEU: 0.2264
@@ -316,6 +282,11 @@ eps=0.1
   BLEU: 0.0891 (drop: 0.1373)
   METEOR: 0.1132 (drop: 0.1259)
   BERTScore F1 vs Original: 0.9059
+eps=0.2
+📊 Scores under FGSM Attack:
+  BLEU: 0.0800 (drop: 0.1464)
+  METEOR: 0.1100 (drop: 0.1291)
+  BERTScore F1 vs Original: 0.8900
 
 eps=0.2
 alpha=0.2
@@ -324,36 +295,6 @@ num_iters=5
   BLEU: 0.2066 (drop: 0.0198)
   METEOR: 0.2245 (drop: 0.0146)
   BERTScore F1 vs Original: 0.957
-
-c=1e^-3
-lr=0.05
-num_iters=200
-📊 Scores under C&W Attack:
-  BLEU: 0.1986 (drop: 0.0278)
-  METEOR: 0.2186 (drop: 0.0205)
-  BERTScore F1 vs Original: 0.9562
-
-num_iters=150
-overshoot=0.08
-📊 Scores under DEEPFOOL Attack:
-  BLEU: 0.2012 (drop: 0.0252)
-  METEOR: 0.2166 (drop: 0.0225)
-  BERTScore F1 vs Original: 0.9512
-
-eps=0.5
-📊 Scores under AUTOATTACK Attack:
-  BLEU: 0.1078 (drop: 0.1186)
-  METEOR: 0.1268 (drop: 0.1123)
-  BERTScore F1 vs Original: 0.9101
-
-increased strength
-
-eps=0.2
-📊 Scores under FGSM Attack:
-  BLEU: 0.0800 (drop: 0.1464)
-  METEOR: 0.1100 (drop: 0.1291)
-  BERTScore F1 vs Original: 0.8900
-
 eps=0.4
 alpha=0.4
 num_iters=10
@@ -362,6 +303,13 @@ num_iters=10
   METEOR: 0.1900 (drop: 0.0491)
   BERTScore F1 vs Original: 0.9200
 
+c=1e^-3
+lr=0.05
+num_iters=200
+📊 Scores under C&W Attack:
+  BLEU: 0.1986 (drop: 0.0278)
+  METEOR: 0.2186 (drop: 0.0205)
+  BERTScore F1 vs Original: 0.9562
 c=1e^-2
 lr=0.1
 num_iters=300
@@ -370,6 +318,12 @@ num_iters=300
   METEOR: 0.1800 (drop: 0.0591)
   BERTScore F1 vs Original: 0.9300
 
+num_iters=150
+overshoot=0.08
+📊 Scores under DEEPFOOL Attack:
+  BLEU: 0.2012 (drop: 0.0252)
+  METEOR: 0.2166 (drop: 0.0225)
+  BERTScore F1 vs Original: 0.9512
 num_iters=200
 overshoot=0.1
 📊 Scores under DEEPFOOL Attack:
@@ -377,12 +331,13 @@ overshoot=0.1
   METEOR: 0.1900 (drop: 0.0491)
   BERTScore F1 vs Original: 0.9200
 
+eps=0.5
+📊 Scores under AUTOATTACK Attack:
+  BLEU: 0.1078 (drop: 0.1186)
+  METEOR: 0.1268 (drop: 0.1123)
+  BERTScore F1 vs Original: 0.9101
 eps=0.7
 📊 Scores under AUTOATTACK Attack:
   BLEU: 0.0900 (drop: 0.1364)
   METEOR: 0.1200 (drop: 0.1191)
   BERTScore F1 vs Original: 0.8800
-
-
-
-
